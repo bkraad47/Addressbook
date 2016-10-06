@@ -64,3 +64,7 @@ Specify what it takes to deploy your app.
 * JS/CSS Modal - http://www.w3schools.com/howto/howto_css_modals.asp
 * File upload processing - http://raadtech.blogspot.com.au/2013/02/how-to-do-online-bulk-uploads-for.html
 
+## To Deploy 
+* Do cli command 'ember-build'
+* Copy the dist folder contents to server_files and rename as public
+* Then deploy to your Herkou app on heroku -https://devcenter.heroku.com/articles/deploying-nodejs
