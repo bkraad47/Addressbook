@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "addressbook": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "contacts": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+    }
+  }
+}

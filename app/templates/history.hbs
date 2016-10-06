@@ -1,0 +1,16 @@
+<!-- Display all contacts -->
+
+<table>
+  <tr>
+    <th><h2>Name</h2></th>
+    <th><h2>Email</h2></th>
+  </tr>
+  <!-- display history content -->
+    {{#each model as |contact|}}
+	     <tr>
+			<td><p>{{contact.name}}</p></td>
+			<td><p>{{contact.email}}</p></td>
+		  </tr>
+	{{/each}}
+</table>
+{{outlet}}

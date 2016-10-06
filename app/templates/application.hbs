@@ -1,0 +1,31 @@
+<!-- home page -->
+
+{{#if session.isAuthenticated}}
+<!-- if user signed in display menu and login info -->
+  <nav>
+  <ul>
+	<li><p>Logged in as {{session.currentUser.displayName}}</p></li>
+	<li><p id='LoginLog'></p></li>
+	<li><p>   </p></li>
+	<li><button {{action "signOut"}}>Sign out</button></li>
+	<li><p>   </p></li>
+	<li><p>   </p></li>
+	<li><p>   </p></li>
+	<li><p>   </p></li>
+	<li><p>Menu List</p></li>
+	<li><p>   </p></li>
+    <li><a href="/upload">Upload a File</a></li>
+	<li><p>   </p></li>
+    <li><a href="/history">Address-Book</a></li>
+  </ul>
+ </nav>
+  <article>
+  {{outlet}}
+  </article>
+{{else}}
+<!-- if user not signed display google login button -->
+  <article>
+  <p id='LoginLog'></p>
+  <button {{action "signIn" "google"}}>Sign in with Google</button>
+  </article>
+{{/if}}

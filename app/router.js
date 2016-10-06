@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import config from './config/environment';
+// By Badruddin Kamal
 
 const Router = Ember.Router.extend({
   location: config.locationType,
@@ -7,6 +8,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('upload');
+  this.route('history');
 });
 
 export default Router;

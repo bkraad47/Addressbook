@@ -1,4 +1,5 @@
-# Addressbook
+# Addressbook Badruddin Kamal
+
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
@@ -6,6 +7,7 @@ A short introduction of this app could easily go here.
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
+
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
@@ -50,4 +52,15 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+  
+## More Dependencies/Sources
+
+* Torrii
+* EmberJS - http://emberjs.com/
+* EmberFire - https://github.com/firebase/emberfire
+* Firebase - https://firebase.google.com/docs/
+* File Upload - http://www.w3schools.com/jsref/prop_fileupload_files.asp
+* Layout - http://www.w3schools.com/html/html_layout.asp
+* JS/CSS Modal - http://www.w3schools.com/howto/howto_css_modals.asp
+* File upload processing - http://raadtech.blogspot.com.au/2013/02/how-to-do-online-bulk-uploads-for.html
 

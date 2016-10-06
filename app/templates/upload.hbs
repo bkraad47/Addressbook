@@ -1,0 +1,39 @@
+<!--Upload Page-->
+
+
+
+
+<h2>Upload File(Only *.csv supported)</h2>
+<p>File format per line should be a unique: name,email (Also duplicate entries within file not supported)</p>
+<br/>
+<p>{{uploadLog}}</p>
+<br/>
+  <p>  {{input id="UploadFileItem" type="file"}}
+
+    <button {{action "UploadFile"}}>Upload File</button></p>
+<br/>
+
+
+
+
+
+<!--Modal for data Update from w3schools-->
+<div id="updateModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('updateModal').style.display = 'none'">×</span>
+    <section>
+	<h2>Select the contact details you wish to update and press the button below</h2>
+	{{#each disputedObj as |dispute|}}
+	   <p><input type="checkbox" id="dispute_{{dispute.count}}" value="True"> For {{dispute.email}} , name {{dispute.oldName}} with {{dispute.newName}}</p> <br>
+	   
+	{{/each}}
+	
+	<button {{action "Update"}}>Update Selected</button>
+	</section>
+  </div>
+
+ </div>
+
+{{outlet}}
