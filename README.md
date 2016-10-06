@@ -67,4 +67,4 @@ Specify what it takes to deploy your app.
 ## To Deploy 
 * Do cli command 'ember-build'
 * Copy the dist folder contents to server_files and rename as public
-* Then deploy to your Herkou app on heroku -https://devcenter.heroku.com/articles/deploying-nodejs
+* Then deploy the server_files contents to your Herkou app on heroku - https://devcenter.heroku.com/articles/deploying-nodejs
