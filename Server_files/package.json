@@ -1,0 +1,14 @@
+{
+  "name": "address_book",
+  "version": "1.0.0",
+  "description": "Addressbook by bkamal",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Badruddin Kamal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
